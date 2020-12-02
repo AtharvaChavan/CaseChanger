@@ -626,26 +626,6 @@ t = this, e = function () {
             return e.preventDefault(), _ = this.href, $ = 520, ee = 320, te = screen.width / 2 - $ / 2, ne = screen.height / 2 - ee / 2, window.open(_, "", "menubar=no,toolbar=no,resizable=yes,scrollbars=yes,width=" + $ + ",height=" + ee + ",top=" + ne + ",left=" + te), !1
         })
     }
-    var Ee = "ACCEPTCONSENT";
-    if ("y" != function (_) {
-            for (var $ = _ + "=", ee = document.cookie.split(";"), i = 0; i < ee.length; i++) {
-                for (var c = ee[i];
-                    " " == c.charAt(0);) c = c.substring(1);
-                if (0 == c.indexOf($)) return c.substring($.length, c.length)
-            }
-            return ""
-        }(Ee)) {
-        var be = document.getElementById("cookiebar");
-        be.style.display = "block", document.querySelectorAll("#cookiebar .ok")[0].addEventListener("click", function (e) {
-            return be.style.display = "none",
-                function (_, $, ee, te) {
-                    var d = new Date;
-                    d.setTime(d.getTime() + 24 * ee * 60 * 60 * 1e3);
-                    var ne = "expires=" + d.toUTCString();
-                    document.cookie = _ + "=" + $ + ";" + ne + ";path=" + te
-                }(Ee, "y", 365, "/"), !1
-        })
-    }
     var Le = document.getElementById("menu");
     Le.classList.add("js");
     var Ce = window.location.pathname.split("/")[1];
