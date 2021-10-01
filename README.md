@@ -6,4 +6,4 @@ retype<br>
 Simply enter text and convert to any other case <br>
 atharvachavan.github.io/CaseChanger/ <br>
 OR<br>
-atharvachavan.me/CaseChanger/
+http://casechanger.ml/
